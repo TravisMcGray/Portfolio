@@ -4,229 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #2a2520;
-            color: #d4c5b9;
-            line-height: 1.8;
-        }
-
-        .container {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        header {
-            padding: 80px 40px 60px;
-            text-align: center;
-            border-bottom: 2px solid #704214;
-            background: linear-gradient(180deg, #3d3531 0%, #2a2520 100%);
-        }
-
-        .avatar-image { 
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            margin: 0 auto 24px;
-            display: block;
-            object-fit: cover;
-            border: 4px solid #704214;
-        }
-
-        h1 {
-            font-size: 42px;
-            color: #f5f1ed;
-            margin-bottom: 12px;
-            font-weight: normal;
-            letter-spacing: 2px;
-        }
-
-        .subtitle {
-            font-size: 16px;
-            color: #a89880;
-            font-style: italic;
-            margin-bottom: 24px;
-            letter-spacing: 1px;
-        }
-
-        .tagline {
-            font-size: 15px;
-            color: #c9b5a8;
-            max-width: 500px;
-            margin: 0 auto;
-            line-height: 1.8;
-        }
-
-        section {
-            padding: 60px 40px;
-            border-bottom: 1px solid #4a3f38;
-        }
-
-        .section-title {
-            font-size: 22px;
-            color: #f5f1ed;
-            margin-bottom: 40px;
-            font-weight: normal;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            position: relative;
-            padding-bottom: 16px;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 2px;
-            background: #704214;
-        }
-
-        .work-item {
-            margin-bottom: 50px;
-            padding-bottom: 50px;
-            border-bottom: 1px solid #4a3f38;
-        }
-
-        .work-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .work-title {
-            font-size: 20px;
-            color: #f5f1ed;
-            margin-bottom: 8px;
-            font-weight: normal;
-        }
-
-        .work-role {
-            font-size: 14px;
-            color: #a89880;
-            margin-bottom: 16px;
-            letter-spacing: 1px;
-        }
-
-        .work-description {
-            font-size: 15px;
-            color: #d4c5b9;
-            line-height: 1.8;
-        }
-
-        .work-description a {
-            color: #c9b5a8;
-            text-decoration: none;
-            border-bottom: 1px solid #704214;
-            transition: color 0.3s;
-        }
-
-        .work-description a:hover {
-            color: #f5f1ed;
-        }
-
-        .skills {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-        }
-
-        .skill-category h3 {
-            font-size: 14px;
-            color: #a89880;
-            margin-bottom: 12px;
-            font-weight: normal;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .skill-list {
-            list-style: none;
-        }
-
-        .skill-list li {
-            font-size: 15px;
-            color: #d4c5b9;
-            margin-bottom: 8px;
-            padding-left: 16px;
-            position: relative;
-        }
-
-        .skill-list li::before {
-            content: '—';
-            position: absolute;
-            left: 0;
-            color: #704214;
-        }
-
-        footer {
-            padding: 60px 40px;
-            text-align: center;
-            border-top: 2px solid #704214;
-            background: linear-gradient(180deg, #2a2520 0%, #1f1b17 100%);
-        }
-
-        .contact {
-            margin-bottom: 24px;
-        }
-
-        .contact a {
-            color: #c9b5a8;
-            text-decoration: none;
-            font-size: 15px;
-            margin: 0 20px;
-            letter-spacing: 1px;
-            transition: color 0.3s;
-            border-bottom: 1px solid transparent;
-        }
-
-        .contact a:hover {
-            color: #f5f1ed;
-            border-bottom: 1px solid #704214;
-        }
-
-        .copyright {
-            font-size: 12px;
-            color: #8b7966;
-            letter-spacing: 1px;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                padding: 60px 24px 40px;
-            }
-
-            h1 {
-                font-size: 36px;
-            }
-
-            section {
-                padding: 40px 24px;
-            }
-
-            .skills {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            footer {
-                padding: 40px 24px;
-            }
-
-            .contact a {
-                display: block;
-                margin: 12px 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -256,14 +34,16 @@
                 <p class="work-role">FULL STACK APPLICATION • 2025 - in progress</p>
                 <p class="work-description">A competitive fitness app that gamifies walking and running through hexagonal territory control.
                     Built with Express.js backend, MongoDB, JWT authentication, GPS tracking with geolib for distance calculation, and H3 hexagonal 
-                    grid system for dynamic territory mechanics. Features user authentication, walk/run history tracking, and competitive leaderboard functionality. <a href="https://github.com/TravisMcGray/territory-app">GitHub</a></p>
+                    grid system for dynamic territory mechanics. Features user authentication, walk/run history tracking, and competitive leaderboard functionality. 
+                    <a href="https://github.com/TravisMcGray/territory-app" target="_blank">GitHub</a></p>
             </div>
 
             <div class="work-item">
                 <h3 class="work-title">Peach Tree Coffee & Tea</h3>
                 <p class="work-role">E-COMMERCE WEBSITE • 2025 - in progress</p>
                 <p class="work-description">A responsive e-commerce platform showcasing specialty coffee and tea products with detailed catalog,
-                    pricing page, and product descriptions. Built with React frontend and modern web standards, demonstrating UI/UX best practices and responsive design principles. <a href="https://travismcgray.github.io/Peach-Tree-Coffee-Tea/index.html">Live Site</a> | <a href="https://github.com/TravisMcGray/Peach-Tree-Coffee-Tea">GitHub</a></p>
+                    pricing page, and product descriptions. Built with React frontend and modern web standards, demonstrating UI/UX best practices and responsive design principles. 
+                    <a href="https://travismcgray.github.io/Peach-Tree-Coffee-Tea/index.html" target="_blank">Live Site</a> | <a href="https://github.com/TravisMcGray/Peach-Tree-Coffee-Tea" target="_blank">GitHub</a></p>
             </div>
         </section>
 
