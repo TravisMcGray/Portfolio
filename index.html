@@ -11,18 +11,31 @@
         <header>
             <img src="images/profile.jpg" alt="Profile Picture" class="avatar-image">
             <h1>Travis McGray</h1>
-            <div class="subtitle">Full Stack Software Engineer</div>
-            <p class="tagline">Crafting full-stack solutions with precision engineering and attention to detail. Building products that scale.</p>
+            <div class="subtitle">Detection Engineer · Security-Focused Full-Stack Developer</div>
+            <p class="tagline">U.S. Marine Corps intelligence analyst turned security engineer. I build and tune detections that separate signal from noise — and the applications they protect. Fluent in turning messy telemetry into high-confidence alerts.</p>
         </header>
 
         <section>
             <h2 class="section-title">Experience</h2>
-            
+
+            <div class="work-item">
+                <h3 class="work-title">Microsoft Security &amp; Detection Engineering</h3>
+                <p class="work-role">SELF-DIRECTED LAB · SC-200 ALIGNED · 2026</p>
+                <p class="work-description">Deployed and operate a personal Microsoft Sentinel workspace onboarded to the unified Defender portal: configured live data connectors, authored scheduled analytic rules with MITRE ATT&amp;CK mapping, investigated incidents end to end, and tuned noisy detections to reduce false positives — validating changes against real telemetry and documenting the blind-spot tradeoffs. Daily KQL authoring including multi-table correlation and baselining. All work documented publicly.
+                    <a href="https://github.com/TravisMcGray/microsoft-security-ramp" target="_blank">Work Log (GitHub)</a></p>
+            </div>
+
             <div class="work-item">
                 <h3 class="work-title">Nucamp Full Stack Bootcamp</h3>
                 <p class="work-role">STUDENT • 2025</p>
                 <p class="work-description">Completed intensive full-stack engineering bootcamp covering frontend, backend, mobile development and cloud deployment.
                     Built production-ready applications with modern tech stack, focusing on clean code, system design, and real-world problem solving.</p>
+            </div>
+
+            <div class="work-item">
+                <h3 class="work-title">U.S. Marine Corps — Intelligence Analyst (CLIC-Certified)</h3>
+                <p class="work-role">CORPORAL / E-4 · 2013–2017 · HONORABLE DISCHARGE</p>
+                <p class="work-description">Company Level Intelligence Cell analyst: graded raw operational reporting for reliability, filtered noise from actionable signal under time pressure, and delivered prioritized threat briefings to leadership — the same signal-versus-noise judgment that drives detection engineering. Held a Secret clearance (previously active). Led a team of 12 and delivered 300+ hours of instruction, including operations with international partners.</p>
             </div>
         </section>
 
@@ -32,20 +45,8 @@
             <div class="work-item">
                 <h3 class="work-title">HexCapture webpage/app</h3>
                 <p class="work-role">FULL STACK APPLICATION • 2025 - in progress</p>
-                <p class="work-description">A fullstack fitness territory game where walking and running captures hexagonal tiles on a live global map. Built with a 
-                    React + Vite web frontend, Node/Express backend, MongoDB Atlas, and a React Native + Expo mobile app. Features MapLibre GL JS with a custom dark globe view,
-                    Uber's H3 hexagonal grid system, real-time GPS territory capture, a 4-tier hex progression system, social features (follow, kudos, comments, activity feed),
-                    achievement tracking, live leaderboards, and in-app notifications. Secured with JWT authentication, email verification, bcrypt password hashing, rate limiting,
-                    and per-activity privacy controls. Deployed on Render with MongoDB Atlas.
+                <p class="work-description">Production web + mobile fitness game where I own the abuse-detection pipeline end to end: a GPS anti-cheat system that evaluates per-segment speed against activity-type thresholds, filters spoofed coordinates, and revokes only affected credit while preserving raw telemetry for audit. Detection logic is version-controlled, integration-tested, and gated by a GitHub Actions CI pipeline — detection-as-code. Built with React + Vite, Node/Express, MongoDB Atlas, and React Native + Expo; secured with JWT, bcrypt, email verification, rate limiting, and per-activity privacy controls.
                     <a href="https://hexcapture.com/" target="_blank">Live Site</a> | <a href="https://github.com/TravisMcGray/territory-app" target="_blank">GitHub (Backend)</a>
-            </div>
-            
-            <div class="work-item">
-                <h3 class="work-title">Peach Tree Coffee & Tea</h3>
-                <p class="work-role">E-COMMERCE WEBSITE • 2025 - in progress</p>
-                <p class="work-description">A responsive e-commerce platform showcasing specialty coffee and tea products with detailed catalog,
-                    pricing page, and product descriptions. Built with React frontend and modern web standards, demonstrating UI/UX best practices and responsive design principles. 
-                    <a href="https://travismcgray.github.io/Peach-Tree-Coffee-Tea/index.html" target="_blank">Live Site</a> | <a href="https://github.com/TravisMcGray/Peach-Tree-Coffee-Tea" target="_blank">GitHub</a></p>
             </div>
         </section>
 
@@ -54,28 +55,28 @@
             
             <div class="skills">
                 <div class="skill-category">
-                    <h3>Frontend</h3>
+                    <h3>Security &amp; Detection</h3>
                     <ul class="skill-list">
-                        <li>HTML & CSS</li>
-                        <li>JavaScript (ES6)</li>
-                        <li>React</li>
-                        <li>Vite</li>
-                        <li>Tailwind CSS</li>
-                        <li>MapLibre GL JS</li>
-                        <li>Responsive Design</li>
+                        <li>Microsoft Sentinel</li>
+                        <li>KQL (authoring &amp; tuning)</li>
+                        <li>Microsoft Defender XDR</li>
+                        <li>Analytic rule tuning</li>
+                        <li>MITRE ATT&amp;CK mapping</li>
+                        <li>Incident triage &amp; disposition</li>
+                        <li>Detection-as-code</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Backend & Mobile</h3>
+                    <h3>Engineering</h3>
                     <ul class="skill-list">
-                        <li>REST APIs</li>
-                        <li>Node.js & Express</li>
-                        <li>MongoDB Atlas/Compass</li>
-                        <li>Mongoose</li>
-                        <li>JWT & Auth</li>
-                        <li>Expo / EAS build</li>
-                        <li>GitHub & Visual Studio Code</li>
+                        <li>JavaScript (ES6)</li>
+                        <li>React &amp; Node.js/Express</li>
+                        <li>MongoDB &amp; Mongoose</li>
+                        <li>REST APIs &amp; JWT auth</li>
+                        <li>Jest / Supertest / CI-CD</li>
+                        <li>GitHub Actions</li>
+                        <li>React Native / Expo</li>
                     </ul>
                 </div>
             </div>
@@ -87,7 +88,7 @@
                 <a href="https://github.com/TravisMcGray" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/travis-mcgray/" target="_blank">LinkedIn</a>
             </div>
-            <p class="copyright">© 2025 Travis McGray</p>
+            <p class="copyright">© 2026 Travis McGray</p>
         </footer>
     </div>
 </body>
